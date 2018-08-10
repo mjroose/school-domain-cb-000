@@ -24,6 +24,7 @@ class School
     self.roster.collect! do |grade, students|
       students.sort
     end
+    self.roster
   end
 end
 
