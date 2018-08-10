@@ -24,3 +24,9 @@ class School
     self.roster.sort
   end
 end
+
+nw = School.new("NorthWood")
+nw.add_student("Michael Roose", 10)
+nw.add_student("Mike Hertsel", 11)
+nw.add_student("Jeff Hertsel", 10)
+nw.add_student("Evan Atkinson", 9)
