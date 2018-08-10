@@ -1,5 +1,6 @@
 # code here!
 class School
+  attr_reader :roster
 
   def initialize(name)
     @name = name
@@ -15,7 +16,7 @@ class School
     end
   end
 
-  def roster(grade)
+  def grade(grade)
     self.roster[grade]
   end
 end
