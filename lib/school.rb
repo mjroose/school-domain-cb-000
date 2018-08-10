@@ -7,7 +7,7 @@ class School
     @roster = {}
   end
 
-  def add_student(student_name, :grade)
+  def add_student(student_name, grade)
     if self.roster[:grade]
       self.roster[:grade] << student_name
     else
