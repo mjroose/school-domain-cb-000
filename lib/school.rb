@@ -7,17 +7,17 @@ class School
     @roster = {}
   end
 
-  def add_student(student_name, grade)
-    if self.roster[grade]
-      self.roster[grade] << student_name
+  def add_student(student_name, :grade)
+    if self.roster[:grade]
+      self.roster[:grade] << student_name
     else
-      self.roster[grade] = []
-      self.roster[grade] << student_name
+      self.roster[:grade] = []
+      self.roster[:grade] << student_name
     end
   end
 
-  def grade(grade)
-    self.roster[grade]
+  def grade(:grade)
+    self.roster[:grade]
   end
 
   def sort
